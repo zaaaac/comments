@@ -1,0 +1,14 @@
+allowedFields: ['name', 'email', 'url', 'message','reply_to']
+branch: master
+filename: '{@timestamp}'
+format: json
+path: "{options.slug}"
+moderation: false
+requiredFields: ['name', 'email', 'message']
+generatedFields:
+  date:
+    type: date
+    options:
+      format: "timestamp"
+transforms:
+  email: md5
