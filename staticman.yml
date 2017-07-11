@@ -1,10 +1,10 @@
-allowedFields: ['name', 'email', 'url', 'message','reply_to']
+allowedFields: ['name', 'email', 'url', 'content','reply']
 branch: master
 filename: '{@timestamp}'
 format: json
 path: "{options.slug}"
 moderation: false
-requiredFields: ['name', 'email', 'message']
+requiredFields: ['name', 'email', 'content']
 generatedFields:
   date:
     type: date
